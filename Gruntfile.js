@@ -19,7 +19,7 @@ module.exports = function( grunt ) {
     coffee: {
       compile: {
         files: {
-          'temp/scripts/*.js': 'app/scripts/**/*.coffee'
+          'temp/scripts/*.js': 'app/scripts/**/*.coffee' 
         },
         options: {
           basePath: 'app/scripts'
@@ -124,7 +124,7 @@ module.exports = function( grunt ) {
 
     // concat css/**/*.css files, inline @import, output a single minified css
     css: {
-      'styles/index.css': ['styles/**/*.css']
+      'styles/main.css': ['styles/**/*.css']
     },
 
     // renames JS/CSS to prepend a hash of their contents for easier
@@ -169,11 +169,21 @@ module.exports = function( grunt ) {
       optimize: 'none',
       baseUrl: './scripts',
       wrap: true,
-      name: 'config'
+      name: 'main'
     },
+
+    // While Yeoman handles concat/min when using
+    // usemin blocks, you can still use them manually
+    concat: {
+      dist: ''
+    },
+
+    min: {
+      dist: ''
+    }
   });
 
   // Alias the `test` task to run the `mocha` task instead
-  grunt.registerTask('test', 'mocha');
+  grunt.registerTask('test', 'server:phantom mocha');
 
 };

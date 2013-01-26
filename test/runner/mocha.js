@@ -1,19 +1,4 @@
-require({
-
-  // Ensure you point to where your spec folder is, base directory is app/scripts,
-  // which is why ../../test is necessary
-  paths: {
-    spec: '../../test/spec'
-  }
-
-}, [
-
-// Load specs
-'spec/example'
-
-], function() {
-  'use strict';
-
+(function() {
   var runner = mocha.run();
 
   if(!window.PHANTOMJS) return;
@@ -53,4 +38,4 @@ require({
     var args = [].slice.call(arguments);
     alert(JSON.stringify(args));
   }
-});
+})();
