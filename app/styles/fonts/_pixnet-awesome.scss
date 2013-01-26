@@ -1,0 +1,45 @@
+$pixnetAwesomePath:   "../../fonts" !default;
+$borderColor:       #eee;
+$iconMuted:         #eee;
+@mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; border-radius: $radius; }
+
+@font-face {
+  font-family: 'pixnet';
+  src: url('#{$pixnetAwesomePath}/pixnet.eot');
+  src: url('#{$pixnetAwesomePath}/pixnet.eot?#iefix') format("embedded-opentype"),
+    url('#{$pixnetAwesomePath}/pixnet.svg#pixnet') format("svg"),
+    url('#{$pixnetAwesomePath}/pixnet.woff') format("woff"),
+    url('#{$pixnetAwesomePath}/pixnet.tff') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Pixnet Awesome styles
+    ------------------------------------------------------- */
+[data-icon]:before {
+    font-family: 'pixnet';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+[class^="ico-moon-"]:before, [class*=" ico-moon-"]:before {
+    font-family: 'pixnet';
+    font-style: normal;
+    speak: none;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.ico-moon-pi:before {
+    content: "\e001";
+}
+.ico-moon-ke:before {
+    content: "\e002";
+}
+.ico-moon-bon:before {
+    content: "\e000";
+}
