@@ -1,3 +1,10 @@
-define([], function() {
-  return 'Hello from Yeoman!';
+define(['backbone'], function() {
+
+
+    var _init = function(){
+    };
+
+    return {
+        init: _init
+    };
 });
