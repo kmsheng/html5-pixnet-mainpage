@@ -15,6 +15,14 @@ require.config({
   }
 });
 
-require(['app'], function(app){
-    app.init();
+require([
+  'angular',
+  'app',
+  'controllers/controllers',
+], function(angular, app){
+
+    angular.element(document).ready(function(){
+        angular.bootstrap(document, ['pixnet']);
+    });
+
 });
