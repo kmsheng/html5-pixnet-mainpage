@@ -1,10 +1,23 @@
 'use strict';
 
-define(['app'], function(app){
-    app.controller('IndexCtrl', function($scope, $location){
+define(['jquery', 'app'], function($, app){
+
+    app.controller('IndexCtrl', function($scope, $routeParams, $http){
+
+        var url = 'http://emma.pixnet.cc/blog/articles?user=raindog';
+        /*$http.post(url, {})
+        .success(function(data){
+            console.log(data);
+        });*/
+        $.get(url, function(data){
+            console.log(data);
+        });
+
+
         $scope.awesomeThings = [
             'dig',
-            'harder'
+            'harder',
+            'dug'
         ];
     });
 

@@ -22,11 +22,12 @@ require.config({
 });
 
 require([
+  'jquery',
   'angular',
   'app',
   'controllers/controllers',
   'routes'
-], function(angular, app){
+], function($, angular, app){
 
     angular.element(document).ready(function(){
         angular.bootstrap(document, ['pixnet']);
