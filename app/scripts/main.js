@@ -1,3 +1,4 @@
+
 require.config({
     shim: {
         'angular': {exports: 'angular'},
@@ -13,7 +14,9 @@ require.config({
         angular: '//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min'
     },
     priority: [
-        'angular'
+        'angular',
+        'app',
+        'controllers/controllers'
     ],
     urlArgs: 'v=1.1'
 });
@@ -22,8 +25,7 @@ require([
   'angular',
   'app',
   'controllers/controllers',
-  'filters/filters',
-  'directives/directives'
+  'routes'
 ], function(angular, app){
 
     angular.element(document).ready(function(){
