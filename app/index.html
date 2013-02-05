@@ -15,26 +15,14 @@
         <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
-    <div class="container" style="margin-top:50px">
-        <div class="hero-unit">
-            <i class="icon-camera-retro icon-large"></i>
-            <i class="ico-moon-bon icon-large"></i>
-            <p>installed.</p>
-            <h3>Enjoy coding! - Yeoman</h3>
-        </div>
-    </div>
 
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-        <![endif]-->
+    <h2>album list</h2>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
+    <div class="container" ng-view></div>
+
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+    <![endif]-->
 
     <!-- build:js scripts/amd-app.js -->
     <script data-main="scripts/main" src="scripts/vendor/require.js"></script>

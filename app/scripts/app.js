@@ -1,10 +1,5 @@
+'use strict';
+
 define(['angular'], function(angular) {
-
-    var _init = function(){
-
-    };
-
-    return {
-        init: _init
-    };
+    return angular.module('pixnet', [])
 });
