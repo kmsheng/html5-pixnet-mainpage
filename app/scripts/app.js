@@ -1,7 +1,7 @@
-define(['backbone'], function() {
-
+define(['angular'], function(angular) {
 
     var _init = function(){
+
     };
 
     return {
