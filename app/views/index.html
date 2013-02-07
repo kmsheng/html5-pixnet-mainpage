@@ -2,7 +2,11 @@
   <h1>Cheerio!2</h1>
   <p>You now have</p>
   <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+      <li ng-repeat="articles in userArticles">{{articles[0].user.name}}
+         <ul>
+             <li ng-repeat="article in articles | limitTo:5">{{article.title}}</li>
+         </ul>
+      </li>
   </ul>
   <p>installed.</p>
   <h3>Enjoy coding! - Yeoman</h3>

@@ -6,7 +6,7 @@ define([
     return app.config(['$routeProvider', function($routeProvider){
         $routeProvider.when('/', {
            controller: controllers.IndexCtrl,
-        templateUrl: 'views/index.html'
+           templateUrl: 'views/index.html'
         });
         $routeProvider.when('/test', {
            templateUrl: 'views/test.html'
