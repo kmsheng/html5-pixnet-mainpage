@@ -22,3 +22,9 @@
 @mixin bon_size {
   font-size: #{21 / $em}em;
 }
+
+@mixin less-small {
+	/* 13.5px / 18px */
+	font-size: #{($font-size*0.9125) / $em}em;
+	line-height: ($line*0.75) / ($font-size*0.8125) * 1em;
+}
