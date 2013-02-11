@@ -21,6 +21,13 @@
 
       <div class="container">
         <header>
+            <div id="login-wrapper">
+              <div id="login-box">
+                <a href="#">登入</a>
+                <span>或</span>
+                <a href="#">註冊</a>
+              </div>
+            </div>
             <div id="logo-wrapper" class="wrapper">
               <div role="button" id="menu-switch" class="menu-switch">
                 <div class="switch-bar"></div>
@@ -40,9 +47,14 @@
 
         <article id="twoway">
             <section id="main-image-wrapper" class="wrapper">
-                <a href="http://www.7headlines/story/show/1698" target="_blank">
-                  <img class="primary-image" src="http://s.pimg.tw/album/misspixnet/element/188884470_1360258099-1910816046/zoomcrop/540x350.jpg"
-                  alt="7headlines Story Image">
+                <a class="image-link" href="http://www.7headlines/story/show/1698" target="_blank">
+                  <div class="view">
+                    <img class="primary-image" src="http://s.pimg.tw/album/misspixnet/element/188884470_1360258099-1910816046/zoomcrop/540x350.jpg"
+                    alt="7headlines Story Image">
+                    <div class="mask">
+                       <h2>不要問! 很可怕!</h2>
+                    </div><!-- .mask -->
+                  </div><!-- .view -->
                 </a>
                 <h3>
                     <a href="/http://www.7headlines/story/show/1698" target="_blank">
@@ -54,8 +66,13 @@
             <section class="wrapper">
               <ul class="images-box">
                 <li>
-                  <a href="#" target="_blank">
-                    <img class="secondary-image" src="http://s9.pimg.tw/album/lovely/element/209688639_1360220617-424193474/zoomcrop/540x350.jpg" alt="lovely image">
+                  <a href="#" class="image-link" target="_blank">
+                    <div class="view">
+                      <img class="secondary-image" src="http://s9.pimg.tw/album/lovely/element/209688639_1360220617-424193474/zoomcrop/540x350.jpg" alt="lovely image">
+                      <div class="mask">
+                         <h3>要買要快</h3>
+                      </div>
+                    </div>
                   </a>
                   <h3>
                       <a href="/http://www.7headlines/story/show/1698" target="_blank">
@@ -65,8 +82,13 @@
                  </h3>
                 </li>
                 <li>
-                  <a href="#" target="_blank">
-                    <img class="secondary-image" src="http://s4.pimg.tw/album/misspixnet/element/188783394_1360045793-3752068055/zoomcrop/540x350.jpg" alt="lovely image">
+                  <a href="#" class="image-link" target="_blank">
+                    <div class="view">
+                      <img class="secondary-image" src="http://s4.pimg.tw/album/misspixnet/element/188783394_1360045793-3752068055/zoomcrop/540x350.jpg" alt="lovely image">
+                      <div class="mask">
+                        <h3>文具萬歲</h3>
+                      </div>
+                    </div>
                   </a>
                   <h3>
                       <a href="/http://www.7headlines/story/show/1698" target="_blank">
@@ -78,8 +100,40 @@
               </ul>
             </section>
             <section class="wrapper">
-                <h3>a two-way split</h3>
-                <p>these 2 blocks of text will float side with some empty columns on the blah</p>
+              <ul class="images-box second-images-box">
+                <li>
+                  <a class="image-link" href="#" target="_blank">
+                    <div class="view">
+                      <img class="secondary-image" src="http://s9.pimg.tw/album/pixtv/element/53871369_1355732137-3524614979/zoomcrop/540x350.jpg" alt="lovely image">
+                      <div class="mask">
+                        <h3>超好吃..</h3>
+                      </div>
+                    </div>
+                  </a>
+                  <h3>
+                      <a href="/http://www.7headlines/story/show/1698" target="_blank">
+                         <span class="head">痞TV</span>
+                         <span class="desc">南北筒仔米糕大車拼</span>
+                     </a>
+                 </h3>
+                </li>
+                <li>
+                  <a class="image-link" href="#" target="_blank">
+                    <div class="view">
+                      <img class="secondary-image" src="http://s8.pimg.tw/album/misspixnet/element/188877908_1360244588-1697371768/zoomcrop/393x262.jpg" alt="lovely image">
+                      <div class="mask">
+                        <h3>什麼!?</h3>
+                      </div>
+                    </div>
+                  </a>
+                  <h3>
+                      <a href="/http://www.7headlines/story/show/1698" target="_blank">
+                         <span class="head">痞塗鴉</span>
+                         <span class="desc">年度夯文! 2012 最熱關鍵字</span>
+                     </a>
+                 </h3>
+                </li>
+              </ul>
             </section>
         </article>
         <!--ng-view></ng-view-->

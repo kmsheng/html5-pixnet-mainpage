@@ -5,7 +5,7 @@ body {
 }
 
 #ggs-switch {
-  display: none;
+ // display: none;
 }
 
 .menu-switch {
@@ -14,7 +14,7 @@ body {
   padding: 8px 8px 4px;
 }
 .menu-switch:hover .switch-bar {
-  background: #0088cc;
+  background: $hovered-link-color;
 }
 .menu-switch .switch-bar {
   opacity: $default-opacity;
@@ -48,6 +48,9 @@ header h1 {
 header h1 a {
   @include link;
 }
+header h1 a:hover {
+  @include link($hovered-link-color);
+}
 header h1 a {
   @include large;
 }
@@ -59,12 +62,18 @@ img.primary-image {
   border-bottom: 1px solid #ccc;
 }
 #main-image-wrapper {
-  padding-top: 40px;
+  padding-top: 30px;
   border-top: 1px solid #fff;
+}
+section h3 {
+  margin-bottom: 0;
 }
 section h3 a {
   letter-spacing: 1px;
   text-decoration: none;
+}
+#main-image-wrapper h3 a .head {
+  margin-right: 5px;
 }
 section h3 a .head {
   color: #000;
@@ -72,6 +81,52 @@ section h3 a .head {
 }
 section h3 a .desc {
   color: $link-color;
+}
+section h3 a .desc:hover {
+  color: $hovered-link-color;
+}
+.container {
+  border-top: 1px solid #333;
+}
+.view {
+  position: relative;
+  overflow: hidden;
+}
+.image-link img {
+  transition: all 0.25s ease-out 0s;
+}
+.image-link:hover img {
+  opacity: 0.2;
+}
+.image-link:hover .mask {
+  opacity: 0.7;
+  display: block;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+}
+.image-link .mask h2 {
+  text-align: center;
+  padding-top: 45px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.image-link .mask h3 {
+  text-align: center;
+  padding-top: 25px;
+  color: #fff;
+  letter-spacing: 1px;
+  @include normal;
+}
+.mask p {
+
 }
 
 /* @media screen and (min-width: 320px) */
@@ -83,28 +138,61 @@ section h3 a .desc {
   }
   #menu-switch {
     float: left;
-    margin-right: 24px;
+    margin-right: 7.25%;
+    margin-left: 1.25%;
   }
   #logo-wrapper {
     @include clearfix;
   }
   ul.images-box {
     @include clearfix;
-    margin-top: 35px;
+    padding-top: 25px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
   }
   ul.images-box li {
     list-style-type: none;
     float: left;
-    width: 46%;
+    width: 45.75%;
   }
   ul.images-box li:first-child {
-    margin-right: 22px;
+    margin-right: 8.45%;
   }
   ul.images-box li img {
     width: 100%;
   }
   ul.images-box li h3 span {
     display: block;
+  }
+  ul.images-box li h3 .head {
     @include less-small;
+  }
+  ul.images-box li h3 .desc {
+    @include small;
+  }
+  #login-wrapper {
+    @include clearfix;
+  }
+  #login-box {
+    background-color: #444;
+    padding: 3px 20px 2px 25px;
+    width: 90px;
+    float: right;
+    margin-right: 4.25%;
+    margin-bottom: 5px;
+  }
+  #login-box a {
+    text-decoration: none;
+    color: #eee;
+  }
+  #login-box a:hover {
+    color: #fff;
+  }
+  #login-box span {
+    color: #ccc;
+    @include small;
+  }
+  .second-images-box {
+    border-top: 1px solid #fff;
   }
 }
