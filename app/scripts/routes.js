@@ -1,7 +1,7 @@
 define([
     'app',
     'controllers/controllers'
-], function(app, controller){
+], function(app, controllers){
 
     return app.config(['$routeProvider', function($routeProvider){
         $routeProvider.when('/', {
