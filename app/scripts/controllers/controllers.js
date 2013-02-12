@@ -49,7 +49,43 @@ define(['jquery', 'app'], function($, app){
                 $scope.userArticles = userArticles;
             });
 
+    });
 
+    app.controller('ContainerCtrl', function($scope){
+        $scope.toggleMenu = function($event){
+
+          var sideMenu = $('#side-menu');
+          var className = $event.target.className;
+
+          if (('menu-switch' === className) || ('switch-bar' === className)) {
+            sideMenu.removeClass('closed');
+            sideMenu.addClass('opened');
+          } else {
+            if (sideMenu.hasClass('opened')) {
+              sideMenu.removeClass('opened');
+              sideMenu.addClass('closed');
+            }
+          }
+        };
+    });
+
+    app.controller('SideMenuCtrl', function($scope){
+      $scope.lists = [
+        {text: '相簿', href: 'http://www.pixnet.net/album'},
+        {text: '娛樂丸', href: 'http://www.pixnet.net/album'},
+        {text: '化妝台', href: 'http://www.pixnet.net/album'},
+        {text: '電影圈', href: 'http://www.pixnet.net/album'},
+        {text: '運動邦', href: 'http://www.pixnet.net/album'},
+        {text: '讀創館', href: 'http://www.pixnet.net/album'},
+        {text: '好康活動', href: 'http://www.pixnet.net/album'},
+        {text: '部落格', href: 'http://www.pixnet.net/album'},
+        {text: '應用市集', href: 'http://www.pixnet.net/album'},
+        {text: '公益家', href: 'http://www.pixnet.net/album'},
+        {text: '手機', href: 'http://www.pixnet.net/album'},
+        {text: 'NBA', href: 'http://www.pixnet.net/album'},
+        {text: '痞一物', href: 'https://buy.pixnet.tw'},
+        {text: '7Headlines', href: 'http://www.7headlines.com'},
+      ];
     });
 
     return app;
