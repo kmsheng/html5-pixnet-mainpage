@@ -59,7 +59,7 @@ img.primary-image {
 }
 #logo-wrapper {
   padding-bottom: 18px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: $gray-border;
 }
 #main-image-wrapper {
   padding-top: 30px;
@@ -125,8 +125,55 @@ section h3 a .desc:hover {
   letter-spacing: 1px;
   @include normal;
 }
-.mask p {
-
+.channel-focus {
+  display: block;
+  border-top: $light-border;
+  padding-top: 5px;
+}
+.channel-focus img {
+  width: 22.5%;
+  float: left;
+  display: block;
+  padding-top: 2%;
+}
+.channel-focus li {
+  list-style-type: none;
+  padding-bottom: 5px;
+  padding-top: 15px;
+  border-bottom: $gray-border;
+  @include clearfix;
+  min-height: 64px;
+}
+.channel-focus li:nth-child(n+2) {
+  border-top: $light-border;
+}
+.channel-focus li:last-child {
+  border-bottom: 0;
+}
+.channel-focus li h3 {
+  color: #444;
+  @include small;
+}
+.channel-focus li span {
+  color: #666;
+  @include small;
+}
+.channel-focus {
+  padding-bottom: 30px;
+  border-bottom: $gray-border;
+}
+.focus-desc {
+  padding-left: 4.25%;
+  width: 73%;
+  float: left;
+}
+.footer {
+  padding: 15px 10px 30px;
+  margin: 0 5.5555%;
+}
+.footer p {
+  @include small;
+  color: #666;
 }
 
 /* @media screen and (min-width: 320px) */
@@ -147,7 +194,7 @@ section h3 a .desc:hover {
   ul.images-box {
     @include clearfix;
     padding-top: 25px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: $gray-border;
     padding-bottom: 20px;
   }
   ul.images-box li {
@@ -193,6 +240,42 @@ section h3 a .desc:hover {
     @include small;
   }
   .second-images-box {
-    border-top: 1px solid #fff;
+    border-top: $light-border;
+  }
+  .event-image-link img {
+    width: 100%;
+  }
+  .event {
+    @include clearfix;
+    border-top: $light-border;
+    border-bottom: $gray-border;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+  .event-image-link, .event-desc {
+    display: block;
+    float: left;
+    width: 45.5555%;
+  }
+  .event-image-link {
+    padding-right: 8.5%;
+  }
+  .event-desc {
+    list-style-type: none;
+  }
+  .event-desc li a {
+    @include link(#666);
+    @include small;
+  }
+  .event-desc li a:hover {
+    @include link($hovered-link-color);
+  }
+  .ad {
+    width: 100%;
+    height: auto;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    border-top: $light-border;
+    border-bottom: $gray-border;
   }
 }
