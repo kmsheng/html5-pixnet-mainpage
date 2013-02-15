@@ -1,0 +1,103 @@
+
+/* @media screen and (min-width: 320px) */
+@media screen and (min-width: 20em) {
+
+  header h1 {
+    display: block;
+    float: left;
+  }
+  #menu-switch {
+    float: right;
+  }
+  #logo-wrapper {
+    @include clearfix;
+  }
+  ul.images-box {
+    @include clearfix;
+    padding-top: 25px;
+    border-bottom: $gray-border;
+    padding-bottom: 20px;
+  }
+  ul.images-box li {
+    list-style-type: none;
+    float: left;
+    width: 45.75%;
+  }
+  ul.images-box li:first-child {
+    margin-right: 8.45%;
+  }
+  ul.images-box li img {
+    width: 100%;
+  }
+  ul.images-box li h3 span {
+    display: block;
+  }
+  ul.images-box li h3 .head {
+    @include less-small;
+  }
+  ul.images-box li h3 .desc {
+    @include small;
+  }
+  #login-wrapper {
+    @include clearfix;
+  }
+  #login-box {
+    background-color: #444;
+    padding: 3px 20px 2px 25px;
+    width: 90px;
+    float: right;
+    margin-right: 4.25%;
+    margin-bottom: 5px;
+  }
+  #login-box a {
+    text-decoration: none;
+    color: #eee;
+  }
+  #login-box a:hover {
+    color: #fff;
+  }
+  #login-box span {
+    color: #ccc;
+    @include small;
+  }
+  .second-images-box {
+    border-top: $light-border;
+  }
+  .event-image-link img {
+    width: 100%;
+  }
+  .event {
+    @include clearfix;
+    border-top: $light-border;
+    border-bottom: $gray-border;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+  .event-image-link, .event-desc {
+    display: block;
+    float: left;
+    width: 45.5555%;
+  }
+  .event-image-link {
+    padding-right: 8.5%;
+  }
+  .event-desc {
+    list-style-type: none;
+  }
+  .event-desc li a {
+    @include link(#666);
+    @include small;
+  }
+  .event-desc li a:hover {
+    @include link($hovered-link-color);
+  }
+  .ad {
+    width: 100%;
+    height: auto;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    border-top: $light-border;
+    border-bottom: $gray-border;
+    @include clearfix;
+  }
+}

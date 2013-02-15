@@ -44,6 +44,7 @@ body {
 header h1 {
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 2%;
 }
 header h1 a {
   @include link;
@@ -61,6 +62,21 @@ img.primary-image {
   padding-bottom: 18px;
   border-bottom: $gray-border;
 }
+#logo-wrapper h1 {
+  display: block;
+  width: 71.5%;
+  @include clearfix;
+}
+#logo-wrapper h1 i {
+  display: block;
+  float: left;
+  margin: 0 3.5%;
+}
+.ico-moon-pi,
+.ico-moon-ke {
+  line-height: 60px;
+}
+
 #main-image-wrapper {
   padding-top: 30px;
   border-top: 1px solid #fff;
@@ -206,107 +222,47 @@ ul.menu li {
 ul.menu.closed {
   display: none;
 }
-
-/* @media screen and (min-width: 320px) */
-@media screen and (min-width: 20em) {
-
-  header h1 {
-    display: block;
-    float: left;
-  }
-  #menu-switch {
-    float: left;
-    margin-right: 7.25%;
-    margin-left: 1.25%;
-  }
-  #logo-wrapper {
-    @include clearfix;
-  }
-  ul.images-box {
-    @include clearfix;
-    padding-top: 25px;
-    border-bottom: $gray-border;
-    padding-bottom: 20px;
-  }
-  ul.images-box li {
-    list-style-type: none;
-    float: left;
-    width: 45.75%;
-  }
-  ul.images-box li:first-child {
-    margin-right: 8.45%;
-  }
-  ul.images-box li img {
-    width: 100%;
-  }
-  ul.images-box li h3 span {
-    display: block;
-  }
-  ul.images-box li h3 .head {
-    @include less-small;
-  }
-  ul.images-box li h3 .desc {
-    @include small;
-  }
-  #login-wrapper {
-    @include clearfix;
-  }
-  #login-box {
-    background-color: #444;
-    padding: 3px 20px 2px 25px;
-    width: 90px;
-    float: right;
-    margin-right: 4.25%;
-    margin-bottom: 5px;
-  }
-  #login-box a {
-    text-decoration: none;
-    color: #eee;
-  }
-  #login-box a:hover {
-    color: #fff;
-  }
-  #login-box span {
-    color: #ccc;
-    @include small;
-  }
-  .second-images-box {
-    border-top: $light-border;
-  }
-  .event-image-link img {
-    width: 100%;
-  }
-  .event {
-    @include clearfix;
-    border-top: $light-border;
-    border-bottom: $gray-border;
-    padding-top: $padding;
-    padding-bottom: $padding;
-  }
-  .event-image-link, .event-desc {
-    display: block;
-    float: left;
-    width: 45.5555%;
-  }
-  .event-image-link {
-    padding-right: 8.5%;
-  }
-  .event-desc {
-    list-style-type: none;
-  }
-  .event-desc li a {
-    @include link(#666);
-    @include small;
-  }
-  .event-desc li a:hover {
-    @include link($hovered-link-color);
-  }
-  .ad {
-    width: 100%;
-    height: auto;
-    padding-top: $padding;
-    padding-bottom: $padding;
-    border-top: $light-border;
-    border-bottom: $gray-border;
-  }
+ul.hot-topics img {
+  width: 22.5%;
+  display: block;
+  float: left;
 }
+ul.hot-topics li {
+  list-style-type: none;
+  @include clearfix;
+  padding: 15px 0;
+  border-top: $light-border;
+  border-bottom: $gray-border;
+}
+ul.hot-topics li:first-child {
+  border-top: 0;
+}
+ul.hot-topics li:last-child {
+  border-bottom: 0;
+}
+ul.hot-topics .desc {
+  width: 75%;
+  padding-top: 5px;
+  padding-left: 2.5%;
+  float: left;
+}
+ul.hot-topics .desc h2 {
+  color: #435e7f;
+}
+ul.hot-topics li a {
+  text-decoration: none;
+}
+ul.hot-topics li a h2 {
+  @include less-small;
+  margin: 0;
+}
+ul.hot-topics .desc span {
+  @include small;
+  color: #686868;
+}
+embed {
+  width: 100%;
+  display: block;
+  float: left;
+}
+

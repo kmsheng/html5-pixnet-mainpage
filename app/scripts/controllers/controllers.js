@@ -58,8 +58,14 @@ define(['jquery', 'app'], function($, app){
           var className = $event.target.className;
 
           if (('menu-switch' === className) || ('switch-bar' === className)) {
-            sideMenu.removeClass('closed');
-            sideMenu.addClass('opened');
+
+            if (sideMenu.hasClass('opened')) {
+              sideMenu.removeClass('opened');
+              sideMenu.addClass('closed');
+            } else {
+              sideMenu.removeClass('closed');
+              sideMenu.addClass('opened');
+            }
           } else {
             if (sideMenu.hasClass('opened')) {
               sideMenu.removeClass('opened');
