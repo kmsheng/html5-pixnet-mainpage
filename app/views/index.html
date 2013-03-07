@@ -9,6 +9,11 @@
           <span>或</span>
           <a href="#">註冊</a>
         </div>
+        <ul id="top-menu" ng-controller="TopMenuCtrl">
+          <li ng-repeat="list in lists">
+            <a href="{{list.href}}" target="_blank">{{list.text}}</a>
+          </li>
+        </ul>
       </div>
       <div id="logo-wrapper" class="wrapper">
         <h1>
@@ -24,10 +29,15 @@
           <div class="switch-bar"></div>
           <div class="switch-bar"></div>
         </div><!-- #menu-siwtch -->
-      </div>
+      </div><!-- #login-wrapper -->
   </header>
 
   <article id="twoway">
+      <nav id="main-menu">
+        <ul class="main-menu" ng-controller="MainMenuCtrl">
+          <li ng-repeat="list in lists"><a href="{{list.href}}" target="_blank">{{list.text}}</a></li>
+        </ul>
+      </nav>
       <section id="main-image-wrapper" class="wrapper">
           <a class="image-link" href="http://www.7headlines/story/show/1698" target="_blank">
             <div class="view">

@@ -90,7 +90,31 @@ define(['jquery', 'app'], function($, app){
         {text: '手機', href: 'http://www.pixnet.net/album'},
         {text: 'NBA', href: 'http://www.pixnet.net/album'},
         {text: '痞一物', href: 'https://buy.pixnet.tw'},
-        {text: '7Headlines', href: 'http://www.7headlines.com'},
+        {text: '7Headlines', href: 'http://www.7headlines.com'}
+      ];
+    });
+
+    app.controller('MainMenuCtrl', function($scope){
+      $scope.lists = [
+        {text: '相簿', href: 'http://www.pixnet.net/album'},
+        {text: '娛樂丸', href: 'http://www.pixnet.net/album'},
+        {text: '化妝台', href: 'http://www.pixnet.net/album'},
+        {text: '運動邦', href: 'http://www.pixnet.net/album'},
+        {text: '讀創館', href: 'http://www.pixnet.net/album'},
+        {text: '好康活動', href: 'http://www.pixnet.net/album'},
+        {text: '應用市集', href: 'http://www.pixnet.net/album'},
+        {text: '手機', href: 'http://www.pixnet.net/album'},
+        {text: 'NBA', href: 'http://www.pixnet.net/album'}
+      ];
+    });
+
+    app.controller('TopMenuCtrl', function($scope){
+      $scope.lists = [
+          {text: '7Headlines', href: 'http://www.7headlines.com'},
+          {text: '痞一物', href: 'https://buy.pixnet.tw'},
+          {text: '電影圈', href: 'http://www.pixnet.net/album'},
+          {text: '部落格', href: 'http://www.pixnet.net/album'},
+          {text: '公益家', href: 'http://www.pixnet.net/album'}
       ];
     });
 

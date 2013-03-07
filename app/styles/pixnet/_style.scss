@@ -130,13 +130,13 @@ section h3 a .desc:hover {
 }
 .image-link .mask h2 {
   text-align: center;
-  padding-top: 45px;
+  padding-top: 25%;
   color: #fff;
   letter-spacing: 1px;
 }
 .image-link .mask h3 {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 25%;
   color: #fff;
   letter-spacing: 1px;
   @include normal;
@@ -197,12 +197,13 @@ ul.menu {
   float: left;
   width: 75%;
   border: 1px solid #000;
-}
-ul.menu {
   height: 100%;
   z-index: 9999;
   position: fixed;
   background-color: #555;
+}
+#main-menu {
+  display: none;
 }
 ul.menu li a {
   letter-spacing: 1px;
@@ -241,9 +242,8 @@ ul.hot-topics li:last-child {
   border-bottom: 0;
 }
 ul.hot-topics .desc {
-  width: 75%;
-  padding-top: 5px;
-  padding-left: 2.5%;
+  width: 73%;
+  padding-left: 4.5%;
   float: left;
 }
 ul.hot-topics .desc h2 {
@@ -260,9 +260,12 @@ ul.hot-topics .desc span {
   @include small;
   color: #686868;
 }
+
 embed {
   width: 100%;
   display: block;
   float: left;
 }
-
+#top-menu {
+  display: none;
+}

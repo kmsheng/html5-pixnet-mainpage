@@ -1,0 +1,50 @@
+
+/* @media screen and (min-width: 720px) */
+@media screen and (min-width: 45em) {
+
+  #menu-switch {
+    display: none;
+  }
+  #main-menu {
+    display: block;
+  }
+  ul.main-menu {
+    @include clearfix;
+  }
+  ul.main-menu li, ul.main-menu li a {
+    display: block;
+    float: left;
+  }
+  ul.main-menu li a {
+    padding: 10px;
+    width: 62px;
+    color: #555;
+    text-decoration: none;
+  }
+  ul.main-menu li a:hover {
+    color: #333;
+    background-color: #ccc;
+    transition-duration: 0.6s, 0.2s;
+    transition-property: color, background-color;
+    transition-timing-function: ease-out, ease-out;
+  }
+  #logo-wrapper {
+    border-bottom: 0;
+  }
+  #main-image-wrapper {
+    border-top: 0;
+  }
+  #top-menu {
+    display: block;
+    float: right;
+  }
+  #top-menu li , #top-menu li a {
+    float: left;
+    display: block;
+  }
+  #top-menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+}
