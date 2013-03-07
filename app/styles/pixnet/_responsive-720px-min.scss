@@ -36,6 +36,8 @@
   }
   #top-menu {
     display: block;
+    margin-top: 5px;
+    margin-right: 1%;
     float: right;
   }
   #top-menu li , #top-menu li a {
@@ -45,6 +47,12 @@
   #top-menu li a {
     color: #333;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 0 10px;
+  }
+  #top-menu li a {
+    border-left: 1px solid #333;
+  }
+  #side-menu {
+    display: none;
   }
 }
