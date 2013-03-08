@@ -28,3 +28,8 @@
 	font-size: #{($font-size*0.9125) / $em}em;
 	line-height: ($line*0.95) / ($font-size*0.9125) * 1em;
 }
+
+@mixin clear-lines {
+    border-top: 0;
+    border-bottom: 0
+}
