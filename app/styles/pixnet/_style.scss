@@ -185,7 +185,7 @@ section h3 a .desc:hover {
   float: left;
 }
 .footer {
-  padding: 15px 10px 30px;
+  padding: 75px 10px 30px;
   margin: 0 5.5555%;
 }
 .footer p {
@@ -266,6 +266,7 @@ embed {
   display: block;
   float: left;
 }
-#top-menu {
+#top-menu, #sub-main-wrap {
   display: none;
 }
+
